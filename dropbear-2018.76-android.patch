@@ -1382,3 +1382,53 @@ diff -ruN dropbear-2018.76/config.sub MOD-dropbear-2018.76/config.sub
  	or32-*)
  		os=-coff
  		;;
+
+diff -ruN dropbear-2018.76/default_options.h MOD-dropbear-2018.76/default_options.h
+--- dropbear-2018.76/default_options.h  2024-09-04 17:07:33.867894781 +0000
++++ MOD-dropbear-2018.76/default_options.h  2024-09-04 17:14:01.307852686 +0000
+@@ -13,15 +13,15 @@
+ 
+ IMPORTANT: Some options will require "make clean" after changes */
+ 
+-#define DROPBEAR_DEFPORT "10022"
++#define DROPBEAR_DEFPORT "22"
+ 
+ /* Listen on all interfaces */
+ #define DROPBEAR_DEFADDRESS ""
+ 
+ /* Default hostkey paths - these can be specified on the command line */
+-#define DSS_PRIV_FILENAME "./dropbear_dss_host_key"
+-#define RSA_PRIV_FILENAME "./dropbear_rsa_host_key"
+-#define ECDSA_PRIV_FILENAME "./dropbear_ecdsa_host_key"
++#define DSS_PRIV_FILENAME "/data/local/dropbear/dropbear_dss_host_key"
++#define RSA_PRIV_FILENAME "/data/local/dropbear/dropbear_rsa_host_key"
++#define ECDSA_PRIV_FILENAME "/data/local/dropbear/dropbear_ecdsa_host_key"
+ 
+ /* Set NON_INETD_MODE if you require daemon functionality (ie Dropbear listens
+  * on chosen ports and keeps accepting connections. This is the default.
+@@ -250,11 +250,11 @@
+  * OpenSSH), set the path below and set DROPBEAR_SFTPSERVER. 
+  * The sftp-server program is not provided by Dropbear itself */
+ #define DROPBEAR_SFTPSERVER 1
+-#define SFTPSERVER_PATH "/usr/libexec/sftp-server"
++#define SFTPSERVER_PATH "/data/local/xbin/sftp-server"
+ 
+ /* This is used by the scp binary when used as a client binary. If you're
+  * not using the Dropbear client, you'll need to change it */
+-#define DROPBEAR_PATH_SSH_PROGRAM "/usr/bin/dbclient"
++#define DROPBEAR_PATH_SSH_PROGRAM "/data/local/xbin/dbclient"
+ 
+ /* Whether to log commands executed by a client. This only logs the 
+  * (single) command sent to the server, not what a user did in a 
+diff -ruN dropbear-2018.76/netbsd_getpass.c MOD-dropbear-2018.76/netbsd_getpass.c
+--- dropbear-2018.76/netbsd_getpass.c   2024-09-04 17:07:33.867894781 +0000
++++ MOD-dropbear-2018.76/netbsd_getpass.c   2024-09-04 17:15:12.267864681 +0000
+@@ -50,6 +50,7 @@
+ #include <termios.h>
+ #include <unistd.h>
+ 
++#define _PASSWORD_LEN 128  
+ #if 0
+ #ifdef __weak_alias
+ __weak_alias(getpass,_getpass)
+

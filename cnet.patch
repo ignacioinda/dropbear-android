@@ -1,0 +1,311 @@
+diff -ruN dropbear-2018.76/config.log MOD-dropbear-2018.76/config.log
+--- dropbear-2018.76/config.log	2024-09-04 17:10:54.867846298 +0000
++++ MOD-dropbear-2018.76/config.log	2024-09-04 17:08:41.311870688 +0000
+@@ -404,7 +404,7 @@
+ configure:4634: result: no
+ configure:4644: checking for crypt
+ configure:4644: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-965a67.o:conftest.c:function main: error: undefined reference to 'crypt'
++/tmp/conftest-10b37e.o:conftest.c:function main: error: undefined reference to 'crypt'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:4644: $? = 1
+ configure: failed program was:
+@@ -469,7 +469,7 @@
+ configure:4649: checking for crypt in -lcrypt
+ configure:4674: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lcrypt   >&5
+ /root/cnet/android-toolchainarm//bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: error: cannot find -lcrypt
+-/tmp/conftest-1e7d03.o:conftest.c:function main: error: undefined reference to 'crypt'
++/tmp/conftest-a8c4b8.o:conftest.c:function main: error: undefined reference to 'crypt'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:4674: $? = 1
+ configure: failed program was:
+@@ -513,7 +513,7 @@
+ configure:5014: Using openpty if available
+ configure:5016: checking for library containing openpty
+ configure:5047: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-5b70ce.o:conftest.c:function main: error: undefined reference to 'openpty'
++/tmp/conftest-6fddca.o:conftest.c:function main: error: undefined reference to 'openpty'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:5047: $? = 1
+ configure: failed program was:
+@@ -556,7 +556,7 @@
+ | }
+ configure:5047: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil   >&5
+ /root/cnet/android-toolchainarm//bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: error: cannot find -lutil
+-/tmp/conftest-05c818.o:conftest.c:function main: error: undefined reference to 'openpty'
++/tmp/conftest-b7317c.o:conftest.c:function main: error: undefined reference to 'openpty'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:5047: $? = 1
+ configure: failed program was:
+@@ -4143,7 +4143,7 @@
+ configure:6113: result: yes
+ configure:6113: checking for getutid
+ configure:6113: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-7df244.o:conftest.c:function main: error: undefined reference to 'getutid'
++/tmp/conftest-6d752c.o:conftest.c:function main: error: undefined reference to 'getutid'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6113: $? = 1
+ configure: failed program was:
+@@ -4250,7 +4250,7 @@
+ configure:6113: result: no
+ configure:6113: checking for getutline
+ configure:6113: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-3937f2.o:conftest.c:function main: error: undefined reference to 'getutline'
++/tmp/conftest-855ad4.o:conftest.c:function main: error: undefined reference to 'getutline'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6113: $? = 1
+ configure: failed program was:
+@@ -4369,7 +4369,7 @@
+ configure:6124: result: yes
+ configure:6136: checking for endutxent
+ configure:6136: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-e4993c.o:conftest.c:function main: error: undefined reference to 'endutxent'
++/tmp/conftest-effe76.o:conftest.c:function main: error: undefined reference to 'endutxent'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6136: $? = 1
+ configure: failed program was:
+@@ -4479,7 +4479,7 @@
+ configure:6136: result: no
+ configure:6136: checking for getutxent
+ configure:6136: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-dac1bc.o:conftest.c:function main: error: undefined reference to 'getutxent'
++/tmp/conftest-d3553c.o:conftest.c:function main: error: undefined reference to 'getutxent'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6136: $? = 1
+ configure: failed program was:
+@@ -4589,7 +4589,7 @@
+ configure:6136: result: no
+ configure:6136: checking for getutxid
+ configure:6136: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-7ef1ad.o:conftest.c:function main: error: undefined reference to 'getutxid'
++/tmp/conftest-4e72ec.o:conftest.c:function main: error: undefined reference to 'getutxid'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6136: $? = 1
+ configure: failed program was:
+@@ -4699,7 +4699,7 @@
+ configure:6136: result: no
+ configure:6136: checking for getutxline
+ configure:6136: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-7f048e.o:conftest.c:function main: error: undefined reference to 'getutxline'
++/tmp/conftest-bb3ee4.o:conftest.c:function main: error: undefined reference to 'getutxline'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6136: $? = 1
+ configure: failed program was:
+@@ -4809,7 +4809,7 @@
+ configure:6136: result: no
+ configure:6136: checking for pututxline
+ configure:6136: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-5c8587.o:conftest.c:function main: error: undefined reference to 'pututxline'
++/tmp/conftest-54d4df.o:conftest.c:function main: error: undefined reference to 'pututxline'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6136: $? = 1
+ configure: failed program was:
+@@ -4919,7 +4919,7 @@
+ configure:6136: result: no
+ configure:6148: checking for setutxent
+ configure:6148: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-bd144d.o:conftest.c:function main: error: undefined reference to 'setutxent'
++/tmp/conftest-a44d05.o:conftest.c:function main: error: undefined reference to 'setutxent'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6148: $? = 1
+ configure: failed program was:
+@@ -5029,7 +5029,7 @@
+ configure:6148: result: no
+ configure:6148: checking for utmpxname
+ configure:6148: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-2c6dd2.o:conftest.c:function main: error: undefined reference to 'utmpxname'
++/tmp/conftest-91c04b.o:conftest.c:function main: error: undefined reference to 'utmpxname'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6148: $? = 1
+ configure: failed program was:
+@@ -5139,7 +5139,7 @@
+ configure:6148: result: no
+ configure:6160: checking for logout
+ configure:6160: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-9d6e41.o:conftest.c:function main: error: undefined reference to 'logout'
++/tmp/conftest-2b2562.o:conftest.c:function main: error: undefined reference to 'logout'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6160: $? = 1
+ configure: failed program was:
+@@ -5249,7 +5249,7 @@
+ configure:6160: result: no
+ configure:6160: checking for updwtmp
+ configure:6160: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-09863c.o:conftest.c:function main: error: undefined reference to 'updwtmp'
++/tmp/conftest-83a751.o:conftest.c:function main: error: undefined reference to 'updwtmp'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6160: $? = 1
+ configure: failed program was:
+@@ -5359,7 +5359,7 @@
+ configure:6160: result: no
+ configure:6160: checking for logwtmp
+ configure:6160: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-0b73f7.o:conftest.c:function main: error: undefined reference to 'logwtmp'
++/tmp/conftest-c2c096.o:conftest.c:function main: error: undefined reference to 'logwtmp'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6160: $? = 1
+ configure: failed program was:
+@@ -5654,7 +5654,7 @@
+ configure:6173: result: no
+ configure:6185: checking for mach_absolute_time
+ configure:6185: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-3ad81e.o:conftest.c:function main: error: undefined reference to 'mach_absolute_time'
++/tmp/conftest-9ba31d.o:conftest.c:function main: error: undefined reference to 'mach_absolute_time'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6185: $? = 1
+ configure: failed program was:
+@@ -5764,7 +5764,7 @@
+ configure:6185: result: no
+ configure:6198: checking for explicit_bzero
+ configure:6198: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-0edb74.o:conftest.c:function main: error: undefined reference to 'explicit_bzero'
++/tmp/conftest-5d99bf.o:conftest.c:function main: error: undefined reference to 'explicit_bzero'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6198: $? = 1
+ configure: failed program was:
+@@ -5874,7 +5874,7 @@
+ configure:6198: result: no
+ configure:6198: checking for memset_s
+ configure:6198: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-e68797.o:conftest.c:function main: error: undefined reference to 'memset_s'
++/tmp/conftest-5a4bbe.o:conftest.c:function main: error: undefined reference to 'memset_s'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6198: $? = 1
+ configure: failed program was:
+@@ -5985,7 +5985,7 @@
+ configure:6306: checking for mp_exptmod in -ltommath
+ configure:6331: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -ltommath   >&5
+ /root/cnet/android-toolchainarm//bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: error: cannot find -ltommath
+-/tmp/conftest-fe8b22.o:conftest.c:function main: error: undefined reference to 'mp_exptmod'
++/tmp/conftest-a8a8d6.o:conftest.c:function main: error: undefined reference to 'mp_exptmod'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6331: $? = 1
+ configure: failed program was:
+@@ -6073,7 +6073,7 @@
+ configure:6348: checking for register_cipher in -ltomcrypt
+ configure:6373: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -ltomcrypt   >&5
+ /root/cnet/android-toolchainarm//bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: error: cannot find -ltomcrypt
+-/tmp/conftest-7b30c0.o:conftest.c:function main: error: undefined reference to 'register_cipher'
++/tmp/conftest-b49712.o:conftest.c:function main: error: undefined reference to 'register_cipher'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6373: $? = 1
+ configure: failed program was:
+@@ -6160,7 +6160,7 @@
+ configure:6382: result: no
+ configure:6513: checking for library containing login
+ configure:6544: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-a1f4e4.o:conftest.c:function main: error: undefined reference to 'login'
++/tmp/conftest-03e0a4.o:conftest.c:function main: error: undefined reference to 'login'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6544: $? = 1
+ configure: failed program was:
+@@ -6253,7 +6253,7 @@
+ | }
+ configure:6544: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil   >&5
+ /root/cnet/android-toolchainarm//bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: error: cannot find -lutil
+-/tmp/conftest-fc3611.o:conftest.c:function main: error: undefined reference to 'login'
++/tmp/conftest-2b76a9.o:conftest.c:function main: error: undefined reference to 'login'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6544: $? = 1
+ configure: failed program was:
+@@ -6346,7 +6346,7 @@
+ | }
+ configure:6544: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lbsd   >&5
+ /root/cnet/android-toolchainarm//bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: error: cannot find -lbsd
+-/tmp/conftest-a5d479.o:conftest.c:function main: error: undefined reference to 'login'
++/tmp/conftest-fdc535.o:conftest.c:function main: error: undefined reference to 'login'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:6544: $? = 1
+ configure: failed program was:
+@@ -6983,7 +6983,7 @@
+ configure:7030: result: int,fd_set *,struct timeval *
+ configure:7056: checking for getpass
+ configure:7056: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-4d6208.o:conftest.c:function main: error: undefined reference to 'getpass'
++/tmp/conftest-f39f0c.o:conftest.c:function main: error: undefined reference to 'getpass'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:7056: $? = 1
+ configure: failed program was:
+@@ -7109,7 +7109,7 @@
+ configure:7056: result: no
+ configure:7056: checking for getspnam
+ configure:7056: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-20121c.o:conftest.c:function main: error: undefined reference to 'getspnam'
++/tmp/conftest-161758.o:conftest.c:function main: error: undefined reference to 'getspnam'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:7056: $? = 1
+ configure: failed program was:
+@@ -7235,7 +7235,7 @@
+ configure:7056: result: no
+ configure:7056: checking for getusershell
+ configure:7056: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-e17e81.o:conftest.c:function main: error: undefined reference to 'getusershell'
++/tmp/conftest-d673f7.o:conftest.c:function main: error: undefined reference to 'getusershell'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:7056: $? = 1
+ configure: failed program was:
+@@ -7395,7 +7395,7 @@
+ configure:7068: result: yes
+ configure:7068: checking for _getpty
+ configure:7068: /root/cnet/android-toolchainarm//bin/arm-linux-androideabi-gcc --sysroot=/root/cnet/android-toolchainarm//sysroot -o conftest -Os -W -Wall -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2   -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
+-/tmp/conftest-11ae77.o:conftest.c:function main: error: undefined reference to '_getpty'
++/tmp/conftest-299ecd.o:conftest.c:function main: error: undefined reference to '_getpty'
+ clang90: error: linker command failed with exit code 1 (use -v to see invocation)
+ configure:7068: $? = 1
+ configure: failed program was:
+@@ -7575,7 +7575,6 @@
+ config.status:891: creating libtomcrypt/Makefile
+ config.status:891: creating libtommath/Makefile
+ config.status:891: creating config.h
+-config.status:1061: config.h is unchanged
+ configure:8450: 
+ configure:8453: Using bundled libtomcrypt and libtommath
+ configure:8462: 
+diff -ruN dropbear-2018.76/default_options.h MOD-dropbear-2018.76/default_options.h
+--- dropbear-2018.76/default_options.h	2024-09-04 17:07:33.867894781 +0000
++++ MOD-dropbear-2018.76/default_options.h	2024-09-04 17:14:01.307852686 +0000
+@@ -13,15 +13,15 @@
+ 
+ IMPORTANT: Some options will require "make clean" after changes */
+ 
+-#define DROPBEAR_DEFPORT "10022"
++#define DROPBEAR_DEFPORT "22"
+ 
+ /* Listen on all interfaces */
+ #define DROPBEAR_DEFADDRESS ""
+ 
+ /* Default hostkey paths - these can be specified on the command line */
+-#define DSS_PRIV_FILENAME "./dropbear_dss_host_key"
+-#define RSA_PRIV_FILENAME "./dropbear_rsa_host_key"
+-#define ECDSA_PRIV_FILENAME "./dropbear_ecdsa_host_key"
++#define DSS_PRIV_FILENAME "/data/local/dropbear/dropbear_dss_host_key"
++#define RSA_PRIV_FILENAME "/data/local/dropbear/dropbear_rsa_host_key"
++#define ECDSA_PRIV_FILENAME "/data/local/dropbear/dropbear_ecdsa_host_key"
+ 
+ /* Set NON_INETD_MODE if you require daemon functionality (ie Dropbear listens
+  * on chosen ports and keeps accepting connections. This is the default.
+@@ -250,11 +250,11 @@
+  * OpenSSH), set the path below and set DROPBEAR_SFTPSERVER. 
+  * The sftp-server program is not provided by Dropbear itself */
+ #define DROPBEAR_SFTPSERVER 1
+-#define SFTPSERVER_PATH "/usr/libexec/sftp-server"
++#define SFTPSERVER_PATH "/data/local/xbin/sftp-server"
+ 
+ /* This is used by the scp binary when used as a client binary. If you're
+  * not using the Dropbear client, you'll need to change it */
+-#define DROPBEAR_PATH_SSH_PROGRAM "/usr/bin/dbclient"
++#define DROPBEAR_PATH_SSH_PROGRAM "/data/local/xbin/dbclient"
+ 
+ /* Whether to log commands executed by a client. This only logs the 
+  * (single) command sent to the server, not what a user did in a 
+diff -ruN dropbear-2018.76/netbsd_getpass.c MOD-dropbear-2018.76/netbsd_getpass.c
+--- dropbear-2018.76/netbsd_getpass.c	2024-09-04 17:07:33.867894781 +0000
++++ MOD-dropbear-2018.76/netbsd_getpass.c	2024-09-04 17:15:12.267864681 +0000
+@@ -50,6 +50,7 @@
+ #include <termios.h>
+ #include <unistd.h>
+ 
++#define _PASSWORD_LEN 128  
+ #if 0
+ #ifdef __weak_alias
+ __weak_alias(getpass,_getpass)
